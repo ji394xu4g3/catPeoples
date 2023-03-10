@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方案費用-喵奴才們</title>
+    <link rel="stylesheet" href="./stylelsheets/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: 'Noto Sans', sans-serif;
+    }
+</style>
+<body>
+    <!--導覽列-->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="./index.html"><i class="bi bi-circle-fill text-info"></i> 喵奴才們</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
+              </li>
+              <li class="nav-itemme-3 me-3">
+                <a class="nav-link" href="./index.html#cat-server">服務介紹</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link  text-info" href="#">方案費用</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="./problem.html">常見問題</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-info fw-bold" href="./payment.html">方案費用</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--header-->
+    <section class="py-5 text-center" style="background-image: url(./imgs/bg_paper.png);">
+      <h4 class="text-info"> Happy Life</h2>
+        <h2 class="fw-bold mt-3">開始當個快樂的貓主人</h2>
+    </section>
+    <!--表單-->
+    <section class="py-5 container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 shadow-lg  p-lg-4">
+          <form class="mb-3">
+            <h3 class="deco-line mb-3">選擇方案</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-2">
+              <div class="col">
+                <input type="radio" class="btn-check" name="options-outlined" id="check-pay1" autocomplete="off" checked>
+                <label class="btn btn-outline-info d-block" for="check-pay1">
+                  小小搭懶蟲<br class="d-none d-lg-block">
+                  NT 298/月 
+                </label>
+              </div>
+              <div class="col">
+                <input type="radio" class="btn-check" name="options-outlined" id="check-pay2" autocomplete="off" checked>
+                <label class="btn btn-outline-info d-block" for="check-pay2">
+                  睡一整天囉<br class="d-none d-lg-block">
+                  NT 666/月 
+                </label>
+              </div>
+              <div class="col">
+                <input type="radio" class="btn-check" name="options-outlined" id="check-pay3" autocomplete="off" checked>
+                <label class="btn btn-outline-info d-block" for="check-pay3">
+                  客製化方案<br class="d-none d-lg-block">
+                  客服詢價  
+                </label>
+              </div>
+            </div> 
+          </form>
+          <form class="row g-3 needs-validation pb-4" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">名字</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="invalid-feedback">
+                請輸入正確內容
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">姓名</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="invalid-feedback">
+                請輸入正確內容
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom02" class="form-label">電話號碼</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="invalid-feedback">
+                請輸入內容
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom03" class="form-label">住址</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                請輸入內容
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom04" class="form-label">方便聯繫的時間</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">請選擇...</option>
+                <option>09:00-12:00</option>
+                <option>13:00-17:00</option>
+                <option>18:00-22:00</option>
+              </select>
+              <div class="invalid-feedback">
+                請選擇內容
+              </div>
+            </div>
+            <div>
+              <p class="mb-1">加購項目</p>
+              <div class="col-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck1">
+                  <label class="form-check-label" for="invalidCheck1">
+                    每天清掃家裡+100
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+                  <label class="form-check-label" for="invalidCheck2">
+                    陪貓咪玩+50
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck3">
+                  <label class="form-check-label" for="invalidCheck3">
+                    陪貓說話+666
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 ">
+              <button class="btn btn-info w-100" type="submit">選擇方案</button>
+            </div>
+          </form>
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (() => {
+              'use strict'
+
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              const forms = document.querySelectorAll('.needs-validation')
+
+              // Loop over them and prevent submission
+              Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                  if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                  }
+
+                  form.classList.add('was-validated')
+                }, false)
+              })
+            })()
+          </script>
+        </div>
+      </div>
+    </section>
+    <!--表單-->
+    
+
+   <!--其他幫助-->
+   <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2>需要其他協助嗎？</h2>
+      <div class="row g-1 d-flex justify-content-center">
+        <div class="col-3 shadow-lg bg-white p-3 mx-2 rounded">
+          <a href="#" class="btn d-block">
+            <i class="bi bi-telephone-fill text-info"></i>
+            0981999999
+          </a>
+          
+        </div>
+        <div class="col-3 shadow-lg bg-white p-3 mx-2 rounded">
+          <a href="#" class="btn d-block">
+            <i class="bi bi-instagram text-info"></i>
+            喵奴才們
+          </a>
+        </div>
+        <div class="col-3 shadow-lg bg-white p-3 mx-2 rounded">
+          <a href="./problem.html" class="btn d-block">
+            <i class="bi bi-question-lg text-info"></i>
+          常見問題
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--表尾-->
+  <footer class="f-bg py-3 text-center">
+    bootstrap 5 © 2023 黃泰翔
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

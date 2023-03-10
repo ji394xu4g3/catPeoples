@@ -1,0 +1,7 @@
+
+.btn-act{
+    &.active{
+        color: aliceblue;
+        box-shadow: $box-shadow-sm;
+    }
+}
